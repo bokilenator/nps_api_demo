@@ -5,19 +5,18 @@ let api_key = ""
 
 //Data we're getting:
   //entranceFees
-  //entrancePasses
   //operatingHours
   //fullName
   //states
   //url
   //weatherInfo
-  //latLong
+  //image
 
 
 // set search parameters
 var search_state = "CA"
 var search_park = ""
-search_park = "Yosemite" //uncomment to search by park name too
+//search_park = "Yosemite" //uncomment to search by park name too
 
 // create api url
 let npsURL: NSURL = NSURL(string: "https://api.nps.gov/api/v1/parks?stateCode=\(search_state)&q=\(search_park)&api_key=\(api_key)&fields=fullName%2Cstates%2Curl%2CweatherInfo%2CoperatingHours%2CentranceFees%2Cimages")!
